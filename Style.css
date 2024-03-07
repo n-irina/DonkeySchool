@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #536976;
+}
+h1{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 6px 6px 15px #111111;
+}
+.accueil{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.boutons-accueil{
+    gap: 100px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    margin-top: 50px;
+    font-size: 30px; 
+    text-shadow: 6px 6px 15px #111111;
+}
+.photo_profil{
+    margin-top: 50px;
+    box-shadow: 6px 6px 15px #111111;
+    display: flex;
+    justify-content: center;
+    border-radius: 5%
+}
+.nom{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color: white;
+    text-shadow: 6px 6px 15px #111111;
+}
+.projets{
+    width:80em;
+    display: flex;
+    gap: 200px;
+    padding: 80px;
+}
+.id_card,.cube,.site{
+    width: 20em;
+    height: 16em;
+    border-radius:10px;
+    box-shadow: 6px 6px 15px #111111;
+}
+
+h2{
+    margin-top: 70px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:75px;
+    text-align: center;
+    text-shadow: 6px 6px 15px #111111;
+}
+.projet1,.projet2,.projet3{
+   gap:100px;
+   margin-top: 20px;
+}
+h3{
+    margin-top: 20px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:26px;
+}
+.cubetext,.cardtext,.sitetext{
+    text-align: justify;
+    margin-top:10px;
+}
+.photo-profil{
+    padding: 50px;
+    width: 20em;
+    border-radius: 50%;
+}
+.profil{
+    display: flex;
+    justify-content: center;
+}
+.profiltext{
+    margin-top: 50px;
+    font-size: 30px;
+}
+li{
+    padding: 8px
+}
+.formation{
+    display: flex;
+}
+.formations{
+    padding: 50px;
+    text-align: justify;
+}
+.dates{
+    text-align: center;
+    font-size: 40px;
+}
+.lieux{
+    margin-top: 15px;
+    text-align: center;
+    font-size:23px;
+    color: rgb(49, 48, 48);
+    text-shadow: 6px 6px 15px #111111;
+}
+.libellé{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-weight:bold;
+    color:#191b1b
+}
+p{
+    margin-top: 15px;
+}
