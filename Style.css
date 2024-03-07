@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
     list-style: none;
 }
 body{
@@ -45,10 +44,9 @@ h1{
     border-bottom: 2px solid gold;
 }
 .accueil a{
+    text-decoration: none;
     display: block;
     color: white;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0%;
 }
 .sous{
     display: none;
@@ -65,9 +63,7 @@ h1{
     text-align: left;
    
 }
-.sous a{
-    padding: 10px;    
-}
+
 .sous a:hover{
     border-bottom: none;
 }
@@ -166,7 +162,7 @@ li{
     margin-top: 15px;
     text-align: center;
     font-size:40px;
-    color: rgb(49, 48, 48);
+    color: rgb(189, 179, 179);
     text-shadow: 6px 6px 15px #111111;
 }
 .libellé{
@@ -174,7 +170,7 @@ li{
     text-align: center;
     font-size: 30px;
     font-weight:bold;
-    color:#191b1b
+    color:#8ceeee
 }
 .formation12 p,.formation34 p{
     margin-top: 15px;
@@ -188,4 +184,8 @@ li{
     font-size:30px;
     text-align: left;
     text-shadow: 6px 6px 15px #111111;
+}
+footer{
+    text-align: center;
+    margin-bottom: 20px;;
 }
