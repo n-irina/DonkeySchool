@@ -63,7 +63,9 @@ h1{
     text-align: left;
    
 }
-
+.sous a{
+    white-space: nowrap;
+}
 .sous a:hover{
     border-bottom: none;
 }
@@ -78,7 +80,7 @@ h1{
     border-radius: 5%
 }
 .photo-nom{
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 70px;
@@ -90,6 +92,7 @@ h1{
     gap: 200px;
     padding: 80px;
     text-align: center;
+    justify-content: center;
 }
 .photo-projets{
     width: 20em;
@@ -176,16 +179,70 @@ li{
     margin-top: 15px;
 }
 .contact{
-    padding: 100px;
+    padding: 50px;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size:30px;
+    font-size:25px;
     text-align: left;
     text-shadow: 6px 6px 15px #111111;
 }
+
+form{
+    margin: 0 auto;
+    width: 600px;   
+    padding:1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-shadow: 6px 6px 15px #111111;
+    background-color:#445656
+}
+label{
+    margin-top: 20px;
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    white-space: nowrap;
+}
+input, textarea{
+    margin-top: 20px;
+    padding-left: 10px;
+    font: 1em sans-serif;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+textarea{
+    height: 6em;
+    width: 500px
+}
+.button{
+    margin-left: 250px;
+    margin-top: 20px;
+}
+button{
+    width: 250px;
+    height: 40px;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+
+}
+.logos{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.logos a{
+    text-decoration: none;
+}
+.logos a:hover{
+    opacity: 50%;
+}
 footer{
     text-align: center;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
 }
