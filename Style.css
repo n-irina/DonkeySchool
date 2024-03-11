@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+    
 }
 body{
     background: #536976;
@@ -12,26 +12,28 @@ h1{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 90px;
+    font-size: 8rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0.5em;
     text-shadow: 6px 6px 15px #111111;
 }
 .accueil{
+    margin-top: 0.5em;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .accueil ul li{
+    list-style: none;
     float: left;
     text-align: left;
     position: relative;
-    margin-left: 50px;
+    margin-left: 1em;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px; 
+    font-size: 2em; 
     text-shadow: 6px 6px 15px #111111;
 }
 .accueil ul::after{
@@ -56,103 +58,115 @@ h1{
 }
 .accueil > ul li:hover .sous{
     display: block;
+    
 }
 .sous li{
     float: none;
     width: 100%;
     text-align: left;
-   
 }
 .sous a{
     white-space: nowrap;
+    font-size:2rem;
 }
 .sous a:hover{
     border-bottom: none;
 }
 .deroulant > a::after{
     content: "▼";
-    font-size: 20px;
+  
+}
+section{
+    margin-top: 5em;
+    display:flex;
+    justify-content: center;
 }
 
-.photo_profil{
-    display: flex;
-    margin-top: 50px;
-    margin-left: 80px;
-    box-shadow: 6px 6px 15px #111111;
-    border-radius: 5%
-}
 .photo-apropos{
-    display: flex;
-    align-items: center;
+    width: 65em;
+    height: 35em;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:  repeat(7,1fr);
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     text-align: justify;
+    gap: 2em;
 }
-.photo-apropos p span {
-    
-    font-size: 50px;
+.photo-apropos a{
+    grid-column: 1/3;
+    grid-row: 1/6;
+}
+.photo_profil{
+    box-shadow: 6px 6px 15px #111111;
+    border-radius: 5%
+}
+.photo-apropos h3{
+
+    font-size: 2em;
     text-shadow: 6px 6px 15px #111111;
+    grid-column: 3/6;
+    grid-row: 2/6;
 }
-.photo-apropos p{
-    font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;  
+.propos{
+   grid-column:3/6;
+   grid-row: 3/6;
 }
 
 .nom{
-    margin-top: 80px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 70px;
+    font-size: 4em;
     color: white;
     text-shadow: 6px 6px 15px #111111;
+    grid-column: 3/6;
+    grid-row:1/2;
 }
 .projets{
     display: flex;
-    gap: 200px;
-    padding: 80px;
+    gap: 10em;
+    padding: 5em;
     text-align: center;
     justify-content: center;
 }
 .photo-projets{
     width: 20em;
     height: 16em;
-    margin-top: 30px;
-    border-radius:10px;
+    margin-top: 2em;
+    border-radius:5%;
     box-shadow: 6px 6px 15px #111111;
 }
 
 h2{
-    margin-top: 70px;
+    margin-top: 1em;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size:75px;
+    font-size: 5em;
     text-align: center;
     text-shadow: 6px 6px 15px #111111;
 }
 .projet1,.projet2,.projet3{
-   gap:100px;
-   margin-top: 30px;
+   gap:0.5em;
+   margin-top: 1em;
 }
 h3{
-    margin-top: 20px;
+    margin-top: 1em;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size:26px;
+    font-size:1.5em;
 }
 .cubetext,.cardtext,.sitetext{
     text-align: justify;
-    margin-top:30px;
+    margin-top:1.5em;
 }
 .photo-profil{
-    margin-top: 50px;
-    width: 20em;
+    margin-top: 3em;
     border-radius: 50%;
     box-shadow: 6px 6px 15px #111111;
 }
@@ -161,44 +175,52 @@ h3{
     justify-content: center;
 }
 .profiltext li span{
+   
     font-weight: bold;
 }
 .profiltext{
-    padding: 50px;
-    font-size: 30px;
+    list-style: none;
+    padding: 1.5em;
+    font-size: 2em;
 }
 li{
-    padding: 8px
+    padding: 0.5em;
 }
 .formation12,.formation34{
-    margin: 50px;
     display: flex;
+    margin: 2vw 10vw;
+    gap: 3vw;
+    text-align: center;
     justify-content: center;
 }
+
 .formation1,.formation2,.formation3,.formation4{
-    padding-left:50px;
-    text-align: justify;
+    border: #ccc 1px solid;
+    padding: 1vw 2vw;
+    width: 30vw;
+    background-color: #445656;
+    border-radius: 5%;
 }
+
 .dates{
-    text-align: center;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 .lieux{
-    margin-top: 15px;
-    text-align: center;
-    font-size:40px;
+    margin-top:0.5em;
+    font-size:2.5em;
     color: rgb(189, 179, 179);
     text-shadow: 6px 6px 15px #111111;
 }
 .libellé{
-    margin-top: 15px;
-    text-align: center;
-    font-size: 30px;
+    margin-top: 0.5em;
+    font-size: 2em;
     font-weight:bold;
     color:#8ceeee
 }
-.formation12 p,.formation34 p{
-    margin-top: 15px;
+.formation12 p:last-child,.formation34 p:last-child,.formation12 ul,.formation34 ul{
+    margin-top: 0.5em;
+    text-align: justify;
+    font-size: 1.5em;
 }
 .contact{
     padding: 50px;
